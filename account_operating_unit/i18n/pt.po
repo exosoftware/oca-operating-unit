@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_operating_unit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-26 15:55+0000\n"
+"PO-Revision-Date: 2018-07-26 17:03+0100\n"
+"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: pt\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: account_operating_unit
+#: model:ir.ui.view,arch_db:account_operating_unit.report_agedpartnerbalance_operating_units
+#: model:ir.ui.view,arch_db:account_operating_unit.report_financial_operating_units
+#: model:ir.ui.view,arch_db:account_operating_unit.report_trialbalance_operating_units
+msgid "<strong>Operating Units:</strong>"
+msgstr "<strong>Unidades Operacionais:</strong>"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_common_report
+msgid "Account Common Report"
+msgstr "Relatório de Conta Comum"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_move
+msgid "Account Entry"
+msgstr "Lançamento em Conta"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_accounting_report
+msgid "Accounting Report"
+msgstr "Relatório da Contabilidade"
+
+#. module: account_operating_unit
+#: model:ir.model.fields,help:account_operating_unit.field_res_company_ou_is_self_balanced
+msgid "Activate if your company is required to generate a balanced balance sheet for each operating unit."
+msgstr "Ative se a sua empresa tem que gerar um balanço balanceado para cada unidade operacional."
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/company.py:30
+#, python-format
+msgid ""
+"Configuration error!\n"
+"Please indicate an                Inter-operating unit clearing account."
+msgstr ""
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/account_move.py:42
+#, python-format
+msgid ""
+"Configuration error!\n"
+"The Company in the Move Line and in the Operating Unit must be the same."
+msgstr ""
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/account_move.py:53
+#, python-format
+msgid ""
+"Configuration error!\n"
+"The Operating Unit in the Move Line and in the Move must be the same."
+msgstr ""
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/account_move.py:147
+#, python-format
+msgid ""
+"Configuration error!\n"
+"The operating                    unit must be completed for each line if the operating                    unit has been defined as self-balanced at company level."
+msgstr ""
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/account_journal.py:25
+#, python-format
+msgid ""
+"Configuration error!\n"
+"The operating unit must be indicated in bank journals, if it has been defined as self-balanced at company level."
+msgstr ""
+
+#. module: account_operating_unit
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_move_operating_unit_id
+msgid "Default operating unit"
+msgstr "Unidade operacional predefinida"
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/account_move.py:70
+#, python-format
+msgid ""
+"Error!\n"
+"You need to define an inter-operating                unit clearing account in the company settings"
+msgstr ""
+
+#. module: account_operating_unit
+#: model:ir.model.fields,field_description:account_operating_unit.field_res_company_inter_ou_clearing_account_id
+msgid "Inter-operating unit                                                   clearing account"
+msgstr ""
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_invoice
+msgid "Invoice"
+msgstr "Fatura"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Linha de Fatura"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Estatísticas de Faturas"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_journal
+msgid "Journal"
+msgstr "Diário"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_move_line
+msgid "Journal Item"
+msgstr "Item de Diário"
+
+#. module: account_operating_unit
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_invoice_line_operating_unit_id
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_invoice_operating_unit_id
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_invoice_report_operating_unit_id
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_journal_operating_unit_id
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line_operating_unit_id
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_operating_unit_id
+#: model:ir.ui.view,arch_db:account_operating_unit.view_account_invoice_filter
+#: model:ir.ui.view,arch_db:account_operating_unit.view_account_invoice_report_search
+#: model:ir.ui.view,arch_db:account_operating_unit.view_account_move_line_filter
+#: model:ir.ui.view,arch_db:account_operating_unit.view_account_payment_search
+msgid "Operating Unit"
+msgstr "Unidade Operacional"
+
+#. module: account_operating_unit
+#: model:ir.model.fields,help:account_operating_unit.field_account_journal_operating_unit_id
+msgid "Operating Unit that will be used in payments, when this journal is used."
+msgstr "Unidade Operacional que será usada nos pagamentos quando este diário é usado."
+
+#. module: account_operating_unit
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_aged_trial_balance_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_balance_report_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_common_account_report_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_common_journal_report_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_common_partner_report_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_common_report_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_print_journal_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_report_general_ledger_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_account_report_partner_ledger_operating_unit_ids
+#: model:ir.model.fields,field_description:account_operating_unit.field_accounting_report_operating_unit_ids
+#: model:ir.ui.view,arch_db:account_operating_unit.accounting_report_view
+#: model:ir.ui.view,arch_db:account_operating_unit.view_company_form
+msgid "Operating Units"
+msgstr "Unidades Operacionais"
+
+#. module: account_operating_unit
+#: model:ir.model.fields,field_description:account_operating_unit.field_res_company_ou_is_self_balanced
+msgid "Operating Units are self-balanced"
+msgstr "As Unidades Operacionais estão auto-balanceadas"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_payment
+msgid "Payments"
+msgstr "Pagamentos"
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/invoice.py:42
+#, python-format
+msgid "The Company in the Invoice and in Operating Unit must be the same."
+msgstr "A Empresa na Fatura e a Unidade Operacional tem que ser a mesma."
+
+#. module: account_operating_unit
+#: model:ir.model.fields,help:account_operating_unit.field_account_move_operating_unit_id
+msgid "This operating unit will be defaulted in the move lines."
+msgstr "Esta unidade operacional será a predefinida nos items de diário."
+
+#. module: account_operating_unit
+#: code:addons/account_operating_unit/models/account_payment.py:39
+#, python-format
+msgid "Transfer from %s"
+msgstr "Transferências de %s"
+
+#. module: account_operating_unit
+#: model:ir.model,name:account_operating_unit.model_account_balance_report
+msgid "Trial Balance Report"
+msgstr "Relatório de Balancete de Verificação"
